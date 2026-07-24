@@ -37,7 +37,13 @@ test('gera um Worker ESM autocontido e metadados de hospedagem', async () => {
   const build = await source('scripts/build.mjs');
   const hosting = JSON.parse(await source('.openai/hosting.json'));
 
-  assert.deepEqual(hosting, {});
+  assert.deepEqual(
+    Object.keys(hosting).sort(),
+    hosting.project_id ? ['project_id'] : [],
+  );
+  if (hosting.project_id) {
+    assert.match(hosting.project_id, /^appgprj_[a-z0-9]+$/);
+  }
   assert.match(build, /export default/);
   assert.match(build, /dist.+server.+index\.js/s);
   assert.doesNotMatch(build, /process\.env|https?:\/\//);
