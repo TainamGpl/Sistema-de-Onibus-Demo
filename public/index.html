@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demonstração de portfólio para consulta de linhas e horários fictícios de ônibus.">
+  <title>Vai de Ônibus — Demonstração de Portfólio</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="demo-bar"><span>Demonstração independente</span> · Sem vínculo oficial · Dados fictícios</div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">↔</span><span>Vai de Ônibus</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="nav-links" id="menu" data-menu>
+        <a href="/" aria-current="page">Início</a><a href="/linhas">Linhas</a><a href="/horarios">Horários</a>
+      </div>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div>
+          <p class="eyebrow">Mobilidade urbana, sem complicação</p>
+          <h1>Sua rota começa com informação clara.</h1>
+          <p class="hero-copy">Explore linhas, bairros e horários em uma experiência rápida, acessível e pensada para celular.</p>
+          <p class="disclaimer"><strong>Portfólio técnico:</strong> esta interface é uma simulação independente. Não use estes dados para planejar viagens reais.</p>
+          <form class="search-box" data-home-search role="search">
+            <label class="skip-link" for="busca-home">Buscar linha, bairro ou destino</label>
+            <input id="busca-home" name="q" type="search" placeholder="Ex.: Centro, Laranjal ou 5181" autocomplete="off">
+            <button class="button" type="submit">Buscar linha <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+        <aside class="hero-panel" aria-label="Resumo da demonstração">
+          <div class="metric"><strong>06</strong><span>linhas fictícias</span></div>
+          <div class="metric"><strong>05</strong><span>regiões ilustrativas</span></div>
+          <div class="metric"><strong>100%</strong><span>consulta sem cadastro</span></div>
+        </aside>
+      </div>
+    </section>
+    <section class="section section--lift">
+      <div class="panel container">
+        <div class="section-head"><div><p class="eyebrow">Consulta rápida</p><h2>O essencial antes de sair</h2></div><p>Uma demonstração de como dados de transporte podem ser organizados com clareza e boa usabilidade.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-icon" aria-hidden="true">⌖</span><h3>Linhas e bairros</h3><p>Busque por número, origem, destino ou bairro e filtre por região.</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">◷</span><h3>Horários organizados</h3><p>Alterne entre dias úteis, sábados, domingos e feriados.</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">!</span><h3>Avisos em destaque</h3><p>Comunicados fictícios aparecem junto da linha relacionada.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Em destaque</p><h2>Linhas para explorar</h2></div><a class="button" href="/linhas">Ver todas</a></div>
+        <div class="line-grid" data-featured-lines></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-grid container"><p><strong>Vai de Ônibus</strong> · Demonstração independente · Sem vínculo oficial</p><div class="footer-links"><a href="/linhas">Linhas</a><a href="/horarios">Horários</a></div></div></footer>
+</body>
+</html>
+
