@@ -198,4 +198,3 @@ h1 { max-width: 850px; margin-bottom: 1.25rem; font-size: clamp(2.55rem, 6.5vw, 
 }
 
 :focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
-

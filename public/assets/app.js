@@ -216,4 +216,3 @@ setupHomeSearch();
 renderFeatured();
 renderLines();
 renderSchedules();
-
