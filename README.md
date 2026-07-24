@@ -8,6 +8,10 @@ Demonstração pública e independente de uma interface para consulta de linhas,
 
 > Todos os nomes, linhas, horários, bairros e avisos são fictícios. Este projeto não possui vínculo com prefeitura, empresa de transporte ou órgão público e não deve ser usado para planejar viagens reais.
 
+## Prévia
+
+![Prévia da demonstração segura do Sistema de Ônibus](docs/images/onibus-preview.png)
+
 ## Funcionalidades
 
 - Página inicial responsiva
@@ -46,4 +50,3 @@ Distribuído sob a [Licença MIT](LICENSE).
 ## Autor
 
 Desenvolvido por [Tainã Lopes](https://github.com/TainamGpl).
-

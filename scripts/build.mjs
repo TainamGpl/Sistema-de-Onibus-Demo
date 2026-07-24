@@ -92,4 +92,3 @@ await writeFile(
 );
 
 console.log(`Built ${assets.length} static assets into dist/server/index.js`);
-
