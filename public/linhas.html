@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consulte linhas fictícias por número, bairro, destino ou região.">
+  <title>Linhas — Vai de Ônibus</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body data-page="linhas">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="demo-bar"><span>Demonstração independente</span> · Sem vínculo oficial · Dados fictícios</div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">↔</span><span>Vai de Ônibus</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="nav-links" id="menu" data-menu>
+        <a href="/">Início</a><a href="/linhas" aria-current="page">Linhas</a><a href="/horarios">Horários</a>
+      </div>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <section class="page-hero"><div class="container"><p class="eyebrow">Catálogo ilustrativo</p><h1>Encontre a linha certa para explorar.</h1><p>Demonstração independente, sem vínculo oficial. Todos os nomes, horários e trajetos são dados fictícios de portfólio.</p></div></section>
+    <div class="container">
+      <section class="filter-panel" aria-label="Filtros das linhas">
+        <div class="field"><label for="line-search">Linha, bairro ou destino</label><input id="line-search" data-line-search type="search" placeholder="Digite para filtrar" autocomplete="off"></div>
+        <div class="field"><label for="region-filter">Região</label><select id="region-filter" data-region-filter><option value="">Todas as regiões</option><option>Centro</option><option>Norte</option><option>Sul</option><option>Leste</option><option>Oeste</option></select></div>
+      </section>
+      <p class="result-count" data-result-count aria-live="polite"></p>
+      <div class="line-grid" data-lines-grid></div>
+      <div class="empty" data-empty-state hidden><h2>Nenhuma linha encontrada</h2><p>Tente outro termo ou selecione todas as regiões.</p></div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-grid container"><p><strong>Vai de Ônibus</strong> · Demonstração independente · Sem vínculo oficial</p><div class="footer-links"><a href="/">Início</a><a href="/horarios">Horários</a></div></div></footer>
+</body>
+</html>
+
