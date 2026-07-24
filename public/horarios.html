@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Horários fictícios organizados por tipo de dia para demonstração.">
+  <title>Horários — Vai de Ônibus</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body data-page="horarios">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="demo-bar"><span>Demonstração independente</span> · Sem vínculo oficial · Dados fictícios</div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">↔</span><span>Vai de Ônibus</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="nav-links" id="menu" data-menu>
+        <a href="/">Início</a><a href="/linhas">Linhas</a><a href="/horarios" aria-current="page">Horários</a>
+      </div>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <section class="page-hero"><div class="container"><p class="eyebrow">Grade ilustrativa</p><h1>Horários fáceis de consultar.</h1><p>Demonstração independente, sem vínculo oficial. Os horários abaixo são fictícios e não servem para viagens reais.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Escolha o dia</p><h2>Partidas por linha</h2></div><p>Use os botões para comparar rapidamente a operação simulada.</p></div>
+        <div class="day-switcher" aria-label="Tipo de dia">
+          <button class="is-active" type="button" data-day-filter="util" aria-pressed="true">Dias úteis</button>
+          <button type="button" data-day-filter="sabado" aria-pressed="false">Sábados</button>
+          <button type="button" data-day-filter="domingo" aria-pressed="false">Domingos e feriados</button>
+        </div>
+        <div class="schedule-list" data-schedule-list aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-grid container"><p><strong>Vai de Ônibus</strong> · Demonstração independente · Sem vínculo oficial</p><div class="footer-links"><a href="/">Início</a><a href="/linhas">Linhas</a></div></div></footer>
+</body>
+</html>
+
